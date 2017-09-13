@@ -8,7 +8,7 @@ const neptuneStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 

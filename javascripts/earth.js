@@ -7,8 +7,8 @@ const earthStuff = {
 	Diameter: "7,926 miles",
 	Distance: "92.96 million miles",
 	Atmosphere: "78% Nitrogen, 21% Oxygen, 1% Argon",
-	Satelites: "Need",
-	Explorers: "Lots"
+	Satellites: "Moon",
+	Explorers: "Matt Damon"
 };
 
 console.log("earth stuff", earthStuff);

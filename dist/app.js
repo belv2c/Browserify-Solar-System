@@ -27,8 +27,8 @@ const earthStuff = {
 	Diameter: "7,926 miles",
 	Distance: "92.96 million miles",
 	Atmosphere: "78% Nitrogen, 21% Oxygen, 1% Argon",
-	Satelites: "Need",
-	Explorers: "Lots"
+	Satellites: "Moon",
+	Explorers: "Matt Damon"
 };
 
 console.log("earth stuff", earthStuff);
@@ -41,16 +41,16 @@ module.exports = earthStuff;
 
 const jupiterStuff = {
 	Name: "Jupiter",
-	Discovered: "",
-	Mass: "",
-	Diameter: "",
-	Distance: "",
-	Atmosphere: "",
-	Satelites: "",
-	Explorers: ""
+	Discovered: "1610 by Galileo",
+	Mass: "1.8986 × 1027 kg",
+	Diameter: "139,822 km",
+	Distance: "778.5 million km",
+	Atmosphere: "Hydrogen, Helium",
+	Satellites: "53 confirmed",
+	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
 };
 
-
+console.log("jupiter stuff", jupiterStuff);
 
 module.exports = jupiterStuff;
 },{}],4:[function(require,module,exports){
@@ -67,13 +67,13 @@ const PlanetGenerator = require('./PlanetGenerator');
 
 const marsStuff = {
 	Name: "Mars",
-	Discovered: "",
-	Mass: "",
-	Diameter: "",
-	Distance: "",
-	Atmosphere: "",
-	Satelites: "",
-	Explorers: ""
+	Discovered: "1659",
+	Mass: "6.39 x 10^23 kg",
+	Diameter: "4,212 miles",
+	Distance: "141.6 million miles",
+	Atmosphere: "95.32% Carbon Dioxide, 2.7% Nitrogen, 1.6% Argon, 0.13% Carbon Monoxide",
+	Satellites: "Phobos and Deimos",
+	Explorers: "Matt Damon"
 };
 
 
@@ -89,7 +89,7 @@ const mercuryStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 
@@ -107,7 +107,7 @@ const neptuneStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 
@@ -119,13 +119,13 @@ module.exports = neptuneStuff;
 
 const saturnStuff = {
 	Name: "Saturn",
-	Discovered: "",
-	Mass: "",
-	Diameter: "",
-	Distance: "",
-	Atmosphere: "",
-	Satelites: "",
-	Explorers: ""
+	Discovered: "~700BCE",
+	Mass: "5.683 × 10^26 kg",
+	Diameter: "116,464 km",
+	Distance: "1.429 billion km",
+	Atmosphere: "96.3% molecular hydrogen and 3.25% helium by volume",
+	Satellites: "62 confirmed",
+	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
 };
 
 
@@ -141,7 +141,7 @@ const uranusStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 
@@ -158,7 +158,7 @@ const venusStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 

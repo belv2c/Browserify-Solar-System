@@ -7,7 +7,7 @@ const uranusStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 

@@ -7,7 +7,7 @@ const mercuryStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 

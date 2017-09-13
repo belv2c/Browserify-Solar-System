@@ -7,7 +7,7 @@ const venusStuff = {
 	Diameter: "",
 	Distance: "",
 	Atmosphere: "",
-	Satelites: "",
+	Satellites: "",
 	Explorers: ""
 };
 
