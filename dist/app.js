@@ -12,18 +12,20 @@ const earthStuff = {
 	Explorers: "Matt Damon"
 };
 
-console.log("earth stuff", earthStuff);
 
-
-function outputTo(domElement) {
-	domElement.innerHTML += '<div id="earthStuff">';
+const outputPlanetEarth = () => {
+	let earthString = "";
+	console.log("earthstuff");
 	for(let key in earthStuff){
-		domElement.innerHTML += `<p> $${earthStuff[key]}</p>`;
+	earthString += `<div id="earthStuff">`;
+	earthString.innerHTML += `<p> $${earthStuff[key]}</p>`;
+	earthString.innerHTML += `</div>`;
 	}
-		domElement.innerHTML += '</div>';
-}
+	
+	return earthString;
+};
 
-module.exports = outputTo;
+module.exports = outputPlanetEarth;
 },{}],2:[function(require,module,exports){
 "use strict";
 
@@ -49,7 +51,7 @@ console.log("main.js");
 const PlanetGenerator = require('./planetGenerator');
 
 
-document.getElementById('buttons').addEventListener('click', (event) => {
+/*document.getElementById('buttons').addEventListener('click', (event) => {
 	let planetSelected;
 	if (event.target.id === 'buttons'){
 		planetSelected = 'earthStuff';
@@ -57,7 +59,7 @@ document.getElementById('buttons').addEventListener('click', (event) => {
 		planetSelected = event.target.id;
 	}
 	document.getElementById("planets-output").innerHTML = PlanetGenerator[planetSelected]();
-});
+});*/
 
 },{"./planetGenerator":7}],4:[function(require,module,exports){
 "use strict";

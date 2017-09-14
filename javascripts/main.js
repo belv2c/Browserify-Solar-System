@@ -5,7 +5,7 @@ console.log("main.js");
 const PlanetGenerator = require('./planetGenerator');
 
 
-document.getElementById('buttons').addEventListener('click', (event) => {
+/*document.getElementById('buttons').addEventListener('click', (event) => {
 	let planetSelected;
 	if (event.target.id === 'buttons'){
 		planetSelected = 'earthStuff';
@@ -13,4 +13,4 @@ document.getElementById('buttons').addEventListener('click', (event) => {
 		planetSelected = event.target.id;
 	}
 	document.getElementById("planets-output").innerHTML = PlanetGenerator[planetSelected]();
-});
+});*/
