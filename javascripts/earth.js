@@ -14,5 +14,12 @@ const earthStuff = {
 console.log("earth stuff", earthStuff);
 
 
+function outputTo(domElement) {
+	domElement.innerHTML += '<div id="earthStuff">';
+	for(let key in earthStuff){
+		domElement.innerHTML += `<p> $${earthStuff[key]}</p>`;
+	}
+		domElement.innerHTML += '</div>';
+}
 
-module.exports = earthStuff;
+module.exports = outputTo;

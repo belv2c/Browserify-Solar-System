@@ -13,6 +13,6 @@ const planetGenerator = {
 	earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
 };
 
-let planetEarth = document.getElementById("planets-output");
+
 
 module.exports = planetGenerator;
