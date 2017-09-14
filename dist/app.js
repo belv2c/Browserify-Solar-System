@@ -1,25 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
-const earth = require('./earth');
-const jupiter = require('./jupiter');
-const mars = require('./mars');
-const mercury = require('./mercury');
-const neptune = require('./neptune');
-const saturn = require('./saturn');
-const uranus = require('./uranus');
-const venus = require('./venus');
-
-const planetGenerator = {
-	earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
-};
-
-let planetEarth = document.getElementById("planets-output");
-
-module.exports = planetGenerator;
-},{"./earth":2,"./jupiter":3,"./mars":5,"./mercury":6,"./neptune":7,"./saturn":8,"./uranus":9,"./venus":10}],2:[function(require,module,exports){
-"use strict";
-
 const earthStuff = {
 	Name: "Earth",
 	Discovered: "2017 years ago",
@@ -31,12 +12,21 @@ const earthStuff = {
 	Explorers: "Matt Damon"
 };
 
-console.log("earth stuff", earthStuff);
 
+const outputPlanetEarth = () => {
+	let earthString = "";
+	console.log("earthstuff");
+	for(let key in earthStuff){
+	earthString += `<div id="earthStuff">`;
+	earthString.innerHTML += `<p> $${earthStuff[key]}</p>`;
+	earthString.innerHTML += `</div>`;
+	}
+	
+	return earthString;
+};
 
-
-module.exports = earthStuff;
-},{}],3:[function(require,module,exports){
+module.exports = outputPlanetEarth;
+},{}],2:[function(require,module,exports){
 "use strict";
 
 const jupiterStuff = {
@@ -53,16 +43,25 @@ const jupiterStuff = {
 console.log("jupiter stuff", jupiterStuff);
 
 module.exports = jupiterStuff;
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 "use strict";
 
 console.log("main.js");
 
-const PlanetGenerator = require('./PlanetGenerator');
+const PlanetGenerator = require('./planetGenerator');
 
 
+/*document.getElementById('buttons').addEventListener('click', (event) => {
+	let planetSelected;
+	if (event.target.id === 'buttons'){
+		planetSelected = 'earthStuff';
+	} else {
+		planetSelected = event.target.id;
+	}
+	document.getElementById("planets-output").innerHTML = PlanetGenerator[planetSelected]();
+});*/
 
-},{"./PlanetGenerator":1}],5:[function(require,module,exports){
+},{"./planetGenerator":7}],4:[function(require,module,exports){
 "use strict";
 
 const marsStuff = {
@@ -79,7 +78,7 @@ const marsStuff = {
 
 
 module.exports = marsStuff;
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 const mercuryStuff = {
@@ -96,7 +95,7 @@ const mercuryStuff = {
 
 
 module.exports = mercuryStuff;
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 
@@ -114,7 +113,26 @@ const neptuneStuff = {
 
 
 module.exports = neptuneStuff;
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
+"use strict";
+
+const earth = require('./earth');
+const jupiter = require('./jupiter');
+const mars = require('./mars');
+const mercury = require('./mercury');
+const neptune = require('./neptune');
+const saturn = require('./saturn');
+const uranus = require('./uranus');
+const venus = require('./venus');
+
+const planetGenerator = {
+	earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
+};
+
+
+
+module.exports = planetGenerator;
+},{"./earth":1,"./jupiter":2,"./mars":4,"./mercury":5,"./neptune":6,"./saturn":8,"./uranus":9,"./venus":10}],8:[function(require,module,exports){
 "use strict";
 
 const saturnStuff = {
@@ -165,4 +183,4 @@ const venusStuff = {
 
 
 module.exports = venusStuff;
-},{}]},{},[4]);
+},{}]},{},[3]);

@@ -11,8 +11,17 @@ const earthStuff = {
 	Explorers: "Matt Damon"
 };
 
-console.log("earth stuff", earthStuff);
 
+const outputPlanetEarth = () => {
+	let earthString = "";
+	console.log("earthstuff");
+	for(let key in earthStuff){
+	earthString += `<div id="earthStuff">`;
+	earthString.innerHTML += `<p> $${earthStuff[key]}</p>`;
+	earthString.innerHTML += `</div>`;
+	}
+	
+	return earthString;
+};
 
-
-module.exports = earthStuff;
+module.exports = outputPlanetEarth;
