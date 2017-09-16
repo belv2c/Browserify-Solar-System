@@ -33,7 +33,7 @@ let jupiterStuff = {
 	Distance: "778.5 million km",
 	Atmosphere: "Hydrogen, Helium",
 	Satellites: "53 confirmed",
-	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
+	Explorers: "Pioneer, Voyager, Galileo, Ulysses, Cassini"
 };
 
 const outputPlanetJupiter = (jupiterString) => {
@@ -123,7 +123,7 @@ const neptuneStuff = {
 	Mass: "1.0243×1026 kg",
 	Diameter: "49,244 km",
 	Distance: "4.5 billion kilometers",
-	Atmosphere: "Hydrogen and helium, with trace amounts of methane, water, ammonia and other ices",
+	Atmosphere: "Hydrogen and helium, with trace amounts of methane, and water",
 	Satellites: "13 known moons, Triton being the largest",
 	Explorers: "Voyager 2"
 };
