@@ -1,3 +1,7 @@
 body {
-	background-color: lavender;
+	background-color: #ffa07a;
+}
+
+.col-md-6{
+	border: 1px solid black;
 }

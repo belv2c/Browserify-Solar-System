@@ -12,7 +12,7 @@ let marsStuff = {
 };
 
 const outputPlanetMars = (marsString) => {
-	marsString.innerHTML += `<div id="planetDiv">`;
+	marsString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in marsStuff){
 		marsString.innerHTML += `<p>${key}: ${marsStuff[key]}</p>`;
 	}

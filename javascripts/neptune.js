@@ -13,7 +13,7 @@ const neptuneStuff = {
 };
 
 const outputPlanetNeptune = (neptuneString) => {
-	neptuneString.innerHTML += `<div id="planetDiv">`;
+	neptuneString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in neptuneStuff){
 		neptuneString.innerHTML += `<p>${key}: ${neptuneStuff[key]}</p>`;
 	}

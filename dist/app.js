@@ -78,7 +78,7 @@ let marsStuff = {
 };
 
 const outputPlanetMars = (marsString) => {
-	marsString.innerHTML += `<div id="planetDiv">`;
+	marsString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in marsStuff){
 		marsString.innerHTML += `<p>${key}: ${marsStuff[key]}</p>`;
 	}
@@ -103,7 +103,7 @@ let mercuryStuff = {
 };
 
 const outputPlanetMercury = (mercuryString) => {
-	mercuryString.innerHTML += `<div id="planetDiv">`;
+	mercuryString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in mercuryStuff){
 		mercuryString.innerHTML += `<p>${key}: ${mercuryStuff[key]}</p>`;
 	}
@@ -129,7 +129,7 @@ const neptuneStuff = {
 };
 
 const outputPlanetNeptune = (neptuneString) => {
-	neptuneString.innerHTML += `<div id="planetDiv">`;
+	neptuneString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in neptuneStuff){
 		neptuneString.innerHTML += `<p>${key}: ${neptuneStuff[key]}</p>`;
 	}
@@ -141,6 +141,13 @@ module.exports = outputPlanetNeptune;
 "use strict";
 
 let planetContainer = document.getElementById("planets-output");
+let jupiterContainer = document.getElementById("jupiter-output");
+let marsContainer = document.getElementById("mars-output");
+let mercuryContainer = document.getElementById("mercury-output");
+let neptuneContainer = document.getElementById("neptune-output");
+let saturnContainer = document.getElementById("saturn-output");
+let uranusContainer = document.getElementById("uranus-output");
+let venusContainer = document.getElementById("venus-output");
 
 const earth = require('./earth');
 const jupiter = require('./jupiter');
@@ -152,13 +159,13 @@ const uranus = require('./uranus');
 const venus = require('./venus');
 
 earth(planetContainer);
-jupiter(planetContainer);
-mars(planetContainer);
-mercury(planetContainer);
-neptune(planetContainer);
-saturn(planetContainer);
-uranus(planetContainer);
-venus(planetContainer);
+jupiter(jupiterContainer);
+mars(marsContainer);
+mercury(mercuryContainer);
+neptune(neptuneContainer);
+saturn(saturnContainer);
+uranus(uranusContainer);
+venus(venusContainer);
 
 const planetGenerator = {
 	earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
@@ -182,7 +189,7 @@ const saturnStuff = {
 };
 
 const outputPlanetSaturn = (saturnString) => {
-	saturnString.innerHTML += `<div id="planetDiv">`;
+	saturnString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in saturnStuff){
 		saturnString.innerHTML += `<p>${key}: ${saturnStuff[key]}</p>`;
 	}
@@ -228,7 +235,7 @@ const venusStuff = {
 };
 
 const outputPlanetVenus = (venusString) => {
-	venusString.innerHTML += `<div id="planetDiv">`;
+	venusString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in venusStuff){
 		venusString.innerHTML += `<p>${key}: ${venusStuff[key]}</p>`;
 	}
