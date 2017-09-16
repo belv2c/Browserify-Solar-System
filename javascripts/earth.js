@@ -1,6 +1,6 @@
 "use strict";
 
-const earthStuff = {
+let earthStuff = {
 	Name: "Earth",
 	Discovered: "2017 years ago",
 	Mass: "5.972 x 10^24 kg",
@@ -12,16 +12,12 @@ const earthStuff = {
 };
 
 
-const outputPlanetEarth = () => {
-	let earthString = "";
-	console.log("earthstuff");
+const outputPlanetEarth = (earthString) => {
+	earthString.innerHTML += `<div id="planetDiv">`;
 	for(let key in earthStuff){
-	earthString += `<div id="earthStuff">`;
-	earthString.innerHTML += `<p> $${earthStuff[key]}</p>`;
-	earthString.innerHTML += `</div>`;
+		earthString.innerHTML += `<p>${key}: ${earthStuff[key]}</p>`;
 	}
-	
-	return earthString;
+	earthString.innerHTML += `</div>`;
 };
 
 module.exports = outputPlanetEarth;
