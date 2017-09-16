@@ -8,7 +8,7 @@ const neptuneStuff = {
 	Diameter: "49,244 km",
 	Distance: "4.5 billion kilometers",
 	Atmosphere: "Hydrogen and helium, with trace amounts of methane, and water",
-	Satellites: "13 known moons, Triton being the largest",
+	Satellites: "13 known moons",
 	Explorers: "Voyager 2"
 };
 
