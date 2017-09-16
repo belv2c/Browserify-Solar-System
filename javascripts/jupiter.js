@@ -8,7 +8,7 @@ let jupiterStuff = {
 	Distance: "778.5 million km",
 	Atmosphere: "Hydrogen, Helium",
 	Satellites: "53 confirmed",
-	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
+	Explorers: "Pioneer, Voyager, Galileo, Ulysses, Cassini"
 };
 
 const outputPlanetJupiter = (jupiterString) => {
