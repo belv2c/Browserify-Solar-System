@@ -2,7 +2,7 @@
 
 const venusStuff = {
 	Name: "Venus",
-	Discovered: "Since Venus is so bright and noticable in the sky, it was probably seen by the first groups of humans",
+	Discovered: "A long, long time ago",
 	Mass: "4.867 × 10^24 kg ",
 	Diameter: "7,521 miles",
 	Distance: "67.689 million miles ",
