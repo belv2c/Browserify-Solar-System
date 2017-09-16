@@ -53,16 +53,6 @@ console.log("main.js");
 const PlanetGenerator = require('./planetGenerator');
 
 
-/*document.getElementById('buttons').addEventListener('click', (event) => {
-	let planetSelected;
-	if (event.target.id === 'buttons'){
-		planetSelected = 'earthStuff';
-	} else {
-		planetSelected = event.target.id;
-	}
-	document.getElementById("planets-output").innerHTML = PlanetGenerator[planetSelected]();
-});*/
-
 },{"./planetGenerator":7}],4:[function(require,module,exports){
 "use strict";
 
@@ -72,7 +62,7 @@ let marsStuff = {
 	Mass: "6.39 x 10^23 kg",
 	Diameter: "4,212 miles",
 	Distance: "141.6 million miles",
-	Atmosphere: "95.32% Carbon Dioxide, 2.7% Nitrogen, 1.6% Argon, 0.13% Carbon Monoxide",
+	Atmosphere: "95.32% Carbon Dioxide, 2.7% Nitrogen",
 	Satellites: "Phobos and Deimos",
 	Explorers: "Matt Damon"
 };
@@ -124,7 +114,7 @@ const neptuneStuff = {
 	Diameter: "49,244 km",
 	Distance: "4.5 billion kilometers",
 	Atmosphere: "Hydrogen and helium, with trace amounts of methane, and water",
-	Satellites: "13 known moons, Triton being the largest",
+	Satellites: "13 known moons",
 	Explorers: "Voyager 2"
 };
 
@@ -183,9 +173,9 @@ const saturnStuff = {
 	Mass: "5.683 × 10^26 kg",
 	Diameter: "116,464 km",
 	Distance: "1.429 billion km",
-	Atmosphere: "96.3% molecular hydrogen and 3.25% helium by volume",
+	Atmosphere: "96.3% molecular hydrogen",
 	Satellites: "62 confirmed",
-	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
+	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon"
 };
 
 const outputPlanetSaturn = (saturnString) => {
@@ -225,7 +215,7 @@ module.exports = outputPlanetUranus;
 
 const venusStuff = {
 	Name: "Venus",
-	Discovered: "Since Venus is so bright and noticable in the sky, it was probably seen by the first groups of humans",
+	Discovered: "A long, long time ago",
 	Mass: "4.867 × 10^24 kg ",
 	Diameter: "7,521 miles",
 	Distance: "67.689 million miles ",
