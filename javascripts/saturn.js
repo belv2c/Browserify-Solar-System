@@ -11,6 +11,12 @@ const saturnStuff = {
 	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
 };
 
+const outputPlanetSaturn = (saturnString) => {
+	saturnString.innerHTML += `<div id="planetDiv">`;
+	for(let key in saturnStuff){
+		saturnString.innerHTML += `<p>${key}: ${saturnStuff[key]}</p>`;
+	}
+	saturnString.innerHTML += `</div>`;
+};
 
-
-module.exports = saturnStuff;
+module.exports = outputPlanetSaturn;

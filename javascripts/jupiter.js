@@ -1,6 +1,6 @@
 "use strict";
 
-const jupiterStuff = {
+let jupiterStuff = {
 	Name: "Jupiter",
 	Discovered: "1610 by Galileo",
 	Mass: "1.8986 × 1027 kg",
@@ -11,6 +11,12 @@ const jupiterStuff = {
 	Explorers: "Pioneer 10 & 11, Voyager 1 & 2, Galileo, Ulysses, Cassini, New Horizon, Juno"
 };
 
-console.log("jupiter stuff", jupiterStuff);
+const outputPlanetJupiter = (jupiterString) => {
+	jupiterString.innerHTML += `<div id="planetDiv">`;
+	for(let key in jupiterStuff){
+		jupiterString.innerHTML += `<p>${key}: ${jupiterStuff[key]}</p>`;
+	}
+	jupiterString.innerHTML += `</div>`;
+};
 
-module.exports = jupiterStuff;
+module.exports = outputPlanetJupiter;

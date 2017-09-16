@@ -1,6 +1,6 @@
 "use strict";
 
-const marsStuff = {
+let marsStuff = {
 	Name: "Mars",
 	Discovered: "1659",
 	Mass: "6.39 x 10^23 kg",
@@ -11,6 +11,14 @@ const marsStuff = {
 	Explorers: "Matt Damon"
 };
 
+const outputPlanetMars = (marsString) => {
+	marsString.innerHTML += `<div id="planetDiv">`;
+	for(let key in marsStuff){
+		marsString.innerHTML += `<p>${key}: ${marsStuff[key]}</p>`;
+	}
+	marsString.innerHTML += `</div>`;
+};
 
 
-module.exports = marsStuff;
+
+module.exports = outputPlanetMars;
