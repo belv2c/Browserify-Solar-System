@@ -12,7 +12,7 @@ let mercuryStuff = {
 };
 
 const outputPlanetMercury = (mercuryString) => {
-	mercuryString.innerHTML += `<div id="planetDiv">`;
+	mercuryString.innerHTML += `<div id="planetDiv" class="planet-div">`;
 	for(let key in mercuryStuff){
 		mercuryString.innerHTML += `<p>${key}: ${mercuryStuff[key]}</p>`;
 	}
